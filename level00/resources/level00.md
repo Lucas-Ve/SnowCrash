@@ -1,9 +1,5 @@
 # README - level00
 
-## Contexte
-
-Dans ce challenge, l'objectif était de trouver un **flag** caché sur un système Linux. En explorant les fichiers associés à l'utilisateur `flag00`, j'ai découvert deux fichiers système intéressants. À partir de ces fichiers, j'ai pu extraire une chaîne chiffrée, la déchiffrer et obtenir un message en clair, qui semblait être le **flag**.
-
 ## Étapes suivies pour trouver le Flag
 
 ### 1. Recherche des fichiers appartenant à `flag00`
@@ -38,7 +34,7 @@ Pour déchiffrer cette chaîne, j'ai utilisé un outil en ligne de déchiffremen
 
 `nottoohardhere`
 
-
+```bash
 level00@SnowCrash:~$ su flag00
 Password: `nottoohardhere`
 
@@ -48,3 +44,4 @@ Check flag.Here is your token : x24ti5gi3x0ol2eh4esiuxias
 flag00@SnowCrash:~$ su level01
 Password: `x24ti5gi3x0ol2eh4esiuxias`
 level01@SnowCrash:~$ 
+```
