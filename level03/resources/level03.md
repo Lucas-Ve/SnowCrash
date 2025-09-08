@@ -57,7 +57,7 @@ Puisque le binaire `level03` utilise `env` pour appeler `echo`, il trouvera notr
 Si tout fonctionne correctement, vous obtiendrez le flag :
 
 ```bash
-Check flag.Here is your token : qi0ma5uox3af3bc7s4rdp0kc
+Check flag.Here is your token : qi0maab88jeaj46qoumi7maus
 ```
 
 ### 6. Passage à l'utilisateur suivant
@@ -66,6 +66,6 @@ Utilisez le flag pour vous connecter à l'utilisateur `level04` :
 
 ```bash
 level03@SnowCrash:~$ su level04
-Password: qi0ma5uox3af3bc7s4rdp0kc
+Password: qi0maab88jeaj46qoumi7maus
 level04@SnowCrash:~$ 
 ```
