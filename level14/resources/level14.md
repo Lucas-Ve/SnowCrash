@@ -2,6 +2,15 @@
 
 ## Étapes suivies pour obtenir le Flag14
 
+Rien dans le home de level14 : 
+
+```
+level14@SnowCrash:~$ ls -l
+total 0
+level14@SnowCrash:~$ find / -user level14 2> /dev/null | grep -v /proc
+level14@SnowCrash:~$
+```
+
 ### 1. Analyse du binaire `/bin/getflag`
 
 Charge le binaire dans `gdb` pour inspection :
