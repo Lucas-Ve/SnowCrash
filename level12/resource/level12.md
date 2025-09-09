@@ -69,4 +69,4 @@ Le script Perl utilise des backticks (`@output = `egrep "^$xx" /tmp/xd 2>&1`;`) 
 
 ### Explications supplémentaires
 - **Wildcards** : Le wildcard `/*/TOKEN` est évalué par le shell pour trouver `/tmp/TOKEN`, et son contenu (`getflag > /tmp/flag12` ou `whoami > /tmp/who`) est exécuté, exploitant la vulnérabilité.
-- **Différence avec injection directe** : Une injection comme `` `getflag` `` échoue ou boucle car les privilèges restent ceux de `level12`, mais `/tmp/TOKEN` semble contourner cette restriction, peut-être grâce à une logique spécifique dans `level12.pl`.
+- **Différence avec injection directe** : Une injection comme `` `getflag` `` échoue car la commande s'execute directement.
