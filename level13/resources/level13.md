@@ -1,4 +1,4 @@
-# README - Exploitation du binaire level13 (Buffer Overflow)
+# README - Exploitation du binaire level13
 
 ## Étapes suivies pour obtenir le Flag13
 
@@ -86,4 +86,4 @@ level14@SnowCrash:~$
 
 ### Vulnérabilité expliquée
 
-Le binaire vérifie l'UID (`getuid() == 4242`). Si faux, il sort. La dépendance à un UID spécifique est une faiblesse, car elle peut être contournée en modifiant `%eax` dans `gdb`. Une correction impliquerait de supprimer cette vérification ou d'utiliser une authentification plus robuste (ex. : mot de passe). Le buffer overflow potentiel dans `ft_des` n'a pas été exploité ici, car le token est obtenu directement après la vérification UID.
+Le binaire vérifie l'UID (`getuid() == 4242`). Si faux, il sort. La dépendance à un UID spécifique est une faiblesse, car elle peut être contournée en modifiant `%eax` dans `gdb`.
