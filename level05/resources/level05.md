@@ -21,6 +21,18 @@ for i in /opt/openarenaserver/* ; do
 done
 ```
 
+```bash
+level05@SnowCrash:~$ find / -name level05 2> /dev/null
+/var/mail/level05
+/rofs/var/mail/level05
+level05@SnowCrash:~$ cd /var/mail
+level05@SnowCrash:/var/mail$ ls -l
+total 4
+-rw-r--r--+ 1 root mail 58 Sep 11 10:38 level05
+level05@SnowCrash:/var/mail$ cat level05 
+*/2 * * * * su -c "sh /usr/sbin/openarenaserver" - flag05
+```
+
 ### 2. Exploitation de l'exécution automatique
 
 Le script exécute automatiquement tous les fichiers dans `/opt/openarenaserver/`. Nous pouvons créer un fichier malveillant pour exécuter `getflag` et stocker le flag dans un fichier temporaire.
