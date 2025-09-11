@@ -29,6 +29,8 @@ echo "42hDRfypTqqnw" > hashfile
 Puis, j'ai utilisé John the Ripper pour cracker le hash :
 
 ```bash
+docker build -t my-kali .
+docker run -it my-kali
 john hashfile
 ```
 
